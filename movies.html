@@ -19,9 +19,24 @@
 
 <body>
     <header>
-        <container>
-
-        </container>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Movie House</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="movies.html">Movies</a>
+                        <a class="nav-item nav-link" href="menu.html">Menu</a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="viewControls">
@@ -39,22 +54,24 @@
         <section id="nowPlaying">
             <div class="container">
                 <div class="row">
-                    <div class="col-2 col-md-4">
+                    <div class="col-6 col-md-4">
                         <a href="nowplaying/avatar2.html"><img src="../img/avatar2.jpg" alt="Avatar 2" /></a>
                     </div>
-                    <div class="col-2 col-md-4">
-                        <a href="nowplaying/amancalledotto.html"><img src="../img/amancalledotto.jpg" alt="A Man Called Otto" /></a>
+                    <div class="col-6 col-md-4">
+                        <a href="nowplaying/amancalledotto.html"><img src="../img/amancalledotto.jpg"
+                                alt="A Man Called Otto" /></a>
                     </div>
-                    <div class="col-2 col-md-4">
+                    <div class="col-6 col-md-4">
                         <a href="nowplaying/m3gan.html"><img src="../img/megan.jpg" alt="Megan" /></a>
                     </div>
-                    <div class="col-2 col-md-4">
-                        <a href="nowplaying/pussinboots2.html"><img src="../img/pussinboots.jpg" alt="PUSS IN BOOTS: THE LAST WISH" /></a>
+                    <div class="col-6 col-md-4">
+                        <a href="nowplaying/pussinboots2.html"><img src="../img/pussinboots.jpg"
+                                alt="PUSS IN BOOTS: THE LAST WISH" /></a>
                     </div>
-                    <div class="col-2 col-md-4">
+                    <div class="col-6 col-md-4">
                         <a href="nowplaying/skinamarink.html"><img src="../img/skinamarink.jpg" alt="Skinamarink" /></a>
                     </div>
-                    <div class="col-2 col-md-4">
+                    <div class="col-6 col-md-4">
                         <a href="nowplaying/thewhale.html"><img src="../img/the-whale.jpg" alt="The Whale" /></a>
                     </div>
                 </div>
@@ -63,17 +80,20 @@
         <section id="comingSoon">
             <div class="container">
                 <div class="row">
-                    <div class="col-2 col-md-3">
-                        <a href="comingsoon/antman3.html"><img src="../img/antman.jpg" alt="Ant-Man and the Wasp: Quantumania" /></a>
+                    <div class="col-6 col-md-3">
+                        <a href="comingsoon/antman3.html"><img src="../img/antman.jpg"
+                                alt="Ant-Man and the Wasp: Quantumania" /></a>
                     </div>
-                    <div class="col-2 col-md-3">
-                        <a href="comingsoon/dandd.html"><img src="../img/dungeonsanddragons.jpg" alt="Dungeons & Dragons: Honor Among Thieves" /></a>
+                    <div class="col-6 col-md-3">
+                        <a href="comingsoon/dandd.html"><img src="../img/dungeonsanddragons.jpg"
+                                alt="Dungeons & Dragons: Honor Among Thieves" /></a>
                     </div>
-                    <div class="col-2 col-md-3">
+                    <div class="col-6 col-md-3">
                         <a href="comingsoon/renfield.html"><img src="../img/renfield.jpg" alt="Renfield" /></a>
                     </div>
-                    <div class="col-2 col-md-3">
-                        <a href="comingsoon/supermario.html"><img src="../img/mario.jpg" alt="THE SUPER MARIO BROS. MOVIE" /></a>
+                    <div class="col-6 col-md-3">
+                        <a href="comingsoon/supermario.html"><img src="../img/mario.jpg"
+                                alt="THE SUPER MARIO BROS. MOVIE" /></a>
                     </div>
                 </div>
             </div>
@@ -81,9 +101,26 @@
     </main>
     <footer>
         <div class="container">
-
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <a class="navbar-brand mr-auto" href="../index.html">Movie House</a>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav ml-auto">
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
