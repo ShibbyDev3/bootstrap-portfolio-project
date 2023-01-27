@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="../css/theme.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
     <title>Movie House</title>
 </head>
@@ -20,7 +22,7 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="index.html">Movie House</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,11 +30,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="index.html">Home <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="index.html">Home</a>
                         <a class="nav-item nav-link" href="movies.html">Movies</a>
                         <a class="nav-item nav-link" href="menu.html">Menu</a>
-                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                        <a class="nav-item nav-link active" href="contact.html">Contact <span
+                                class="sr-only">(current)</span></a>
                     </div>
                 </div>
             </nav>
@@ -42,57 +44,68 @@
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
-                        <form id="form">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputPassword4">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword4">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2"
-                                    placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </form>
+                    <div class="col-12">
+                        <h1>Contact Us</h1>
                     </div>
-                    <div class="col-4">
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p>Would you like to host an event or do you have any accomdantions for a guest. Feel free to
+                            reach out either by filling out the form below or by calling at 1-800-123-4567.
+                        </p>
+                        <h2>Hours Of Operation</h2>
+                        <ul>
+                            <li>Sunday: 10 A.M. - 10 P.M.</li>
+                            <li>Monday: 8 A.M. - 12 A.M.</li>
+                            <li>Tuesday: 8 A.M. - 12 A.M.</li>
+                            <li>Wednesday: 8 A.M. - 12 A.M.</li>
+                            <li>Thurday: 8 A.M. - 12 A.M.</li>
+                            <li>Friday: 8 A.M. - 2 A.M.</li>
+                            <li>Saturday: 8AM - 2 A.M.</li>
+                        </ul>
+                        <h2>Location</h2>
+                        <iframe class="map" style="width:100%;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5667308121015!2d-81.5670241840167!3d30.19236831852281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5cba3fdea53ed%3A0xd886d84e0ba0b9ac!2sRegal%20Avenues!5e0!3m2!1sen!2sus!4v1674797302284!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="form">
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="form-control" id="firstName">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="clientRequest">Request</label>
+                                            <textarea class="form-control" id="clientRequest" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn formSubmit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelector(`.formSubmit`).addEventListener(`click`, event => {
+                                event.preventDefault();
+                                alert(`only for testing, backend not setup.`);
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -100,7 +113,7 @@
     </main>
     <footer>
         <div class="container">
-            <nav class="navbar navbar-expand navbar-light bg-light">
+            <nav class="navbar navbar-expand navbar-dark">
                 <a class="navbar-brand mr-auto" href="../index.html">Movie House</a>
                 <div class="collapse navbar-collapse">
                     <div class="navbar-nav ml-auto">
