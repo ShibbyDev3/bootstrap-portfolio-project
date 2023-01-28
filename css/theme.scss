@@ -71,6 +71,13 @@ header, footer{
     background-color:#5B1317;
 }
 
+footer{
+    padding-bottom:1.5rem;
+    @media screen and (min-width:768px){
+        padding-bottom:0rem;
+    }
+}
+
 header{
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
@@ -87,9 +94,76 @@ header .navbar-nav{
     font-family: 'Kanit', sans-serif;
     font-size:4rem;  
 }
+footer .navbar{
+    flex-direction:column;
+    @media screen and (min-width:768px){
+        flex-direction:row;
+    } 
+}
+
+footer .navbar-brand{
+margin-right:0;
+@media screen and (min-width:768px){
+    margin-right:1rem;
+} 
+}
 
 footer .navbar-nav{
     gap: 1rem;
+}
+
+/*home page*/
+#carousel{
+    background-color: #69161A;
+}
+
+#movieCarousel{
+    border:#420E11 2px solid;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5); 
+}
+
+.movieCarousel__bannerLink{
+    display:block;
+}
+
+.movieCarousel__image{
+aspect-ratio: 16/9;
+}
+
+.carousel-caption{
+    @media screen and (max-width:768px){
+        padding:1rem 0;
+        bottom:0;
+    } 
+}
+
+.movieCarousel__eyebrow{
+margin-bottom:0rem;
+font-size: 1.2rem;
+font-weight: 700;
+text-shadow: 0 2px 4px rgba(0,0,0,1);
+@media screen and (min-width:768px){
+    font-size: 1.6rem;
+}  
+}
+
+.movieCarousel__caption{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    line-height:1;
+    margin-bottom:0;
+    text-shadow: 0 2px 4px rgba(0,0,0,1);
+    @media screen and (min-width:768px){
+        font-size: 5rem;
+    }  
+}
+
+.carousel-control-prev, .carousel-control-next{
+    transition: background-color 0.4s ease;
+    background-color: rgba(105,22,26,0); 
+&:hover{
+    background-color:rgba(105,22,26,.3); 
+}
 }
 
 /*movie list page*/
@@ -130,6 +204,15 @@ transition: transform .5s ease-in-out;
         aspect-ratio: auto;
     } 
 }
+
+#menu h2{
+margin-top:2.5rem;
+}
+
+#menu .menu__foodHeader{
+    margin-top:0;
+}
+
 .price{
     font-weight:600;
 }
@@ -158,10 +241,22 @@ transition: transform .5s ease-in-out;
     background-image:url(../img/beer.jpg);
 }
 
+.sour{
+    background-image:url(../img/sourworms.jpg);    
+}
+
+.chocolate{
+    background-image:url(../img/chocolate.jpg);    
+}
+
 /* contact */
 .map{
     border-style: none;
     border:#420E11 2px solid;
+}
+
+.card{
+    margin-bottom: 3rem;
 }
 
 .formSubmit{
